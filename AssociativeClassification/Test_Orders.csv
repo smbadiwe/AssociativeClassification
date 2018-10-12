@@ -1,0 +1,5 @@
+CustomerID, InvoiceNo, Itemset, TotalPrice
+121,1212,a;c;e,23
+21,34,b;c;e,43
+123,345,a;b;c;e,54
+394,3423,b;e,42

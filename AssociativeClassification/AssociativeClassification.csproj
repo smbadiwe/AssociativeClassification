@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,11 +43,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AprioriAlgorithm\Apriori.cs" />
+    <Compile Include="AprioriAlgorithm\Item.cs" />
+    <Compile Include="AprioriAlgorithm\ItemsDictionary.cs" />
+    <Compile Include="AprioriAlgorithm\Output.cs" />
+    <Compile Include="AprioriAlgorithm\Rule.cs" />
+    <Compile Include="AprioriAlgorithm\RulePrunning.cs" />
+    <Compile Include="AprioriAlgorithm\RuleRanking.cs" />
+    <Compile Include="AprioriAlgorithm\Sorter.cs" />
+    <Compile Include="CustomerOrder.cs" />
+    <Compile Include="OnlineRetailRecord.cs" />
+    <Compile Include="Processor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Content Include="OnlineRetailItaly.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Test_Orders.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Test_Stocks.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
