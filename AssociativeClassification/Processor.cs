@@ -69,6 +69,11 @@ namespace AssociativeClassification
 
         public void PreProcessData(double thresholdAmt)
         {
+            if (File.Exists("OnlineRetailItaly_Orders.csv") && File.Exists("OnlineRetailItaly_Stocks.csv"))
+            {
+                return;
+            }
+
             List<OnlineRetailRecord> records = new List<OnlineRetailRecord>();
             using (TextFieldParser csvParser = new TextFieldParser(@"OnlineRetailItaly.csv"))
             {

@@ -17,7 +17,7 @@ namespace AssociativeClassification
             double minConf = 0.8;
 
             var processor = new Processor(ordersFile, stocksFile);
-            // processor.PreProcessData(400);
+            processor.PreProcessData(400);
 
             processor.FindFrequentItemSetAndAssociationRules(minSup, minConf);
 

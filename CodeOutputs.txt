@@ -131,3 +131,17 @@ Rules (Total = 43)
 84375  ->  22898. (sup: 4, conf = 0.80)
 
 
+Rules AFTER prunning with Database Coverage method.
+Rules (Total = 9)
+===================
+22139;22966  ->  84375. (sup: 4, conf = 1.00)
+22366;22692  ->  48138. (sup: 4, conf = 1.00)
+22379;22380  ->  22381. (sup: 4, conf = 1.00)
+20726  ->  20728. (sup: 4, conf = 1.00)
+21533  ->  22720. (sup: 4, conf = 1.00)
+22554  ->  22556. (sup: 5, conf = 1.00)
+22844  ->  23243. (sup: 4, conf = 1.00)
+22423  ->  POST. (sup: 4, conf = 0.80)
+22627  ->  22720. (sup: 4, conf = 0.80)
+
+
